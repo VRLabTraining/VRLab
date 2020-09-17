@@ -1,0 +1,6 @@
+<p>report works!</p>
+<ul>
+    <li *ngFor="let item of itemList | async">
+       {{ item | json }}
+    </li>
+  </ul>

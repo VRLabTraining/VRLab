@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { MethodCall } from '@angular/compiler';
 import { MethodologyComponent } from './methodology/methodology.component';
 import { AboutComponent } from './about/about.component';
+import { ReportComponent } from './report/report.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'login', component: LoginComponent},
   {path:'methodology', component: MethodologyComponent},
   {path:'about', component: AboutComponent},
+  {path:'report', component: ReportComponent},
   {path:'', redirectTo: 'home', pathMatch: 'full'},
   {path:'**', redirectTo: 'home'}
 ];
