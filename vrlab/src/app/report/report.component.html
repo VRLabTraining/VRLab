@@ -3,4 +3,8 @@
     <li *ngFor="let item of itemList | async">
        {{ item | json }}
     </li>
-  </ul>
+</ul>
+
+<div id='pointCloudDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id='scatterDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id='pieDiv'><!-- Plotly chart will be drawn inside this DIV --></div>

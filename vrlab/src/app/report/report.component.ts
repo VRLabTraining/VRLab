@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ReportHandlerService } from '../report-handler.service'
+declare var generatePointCloudChart: any;
+declare var generateScatterChart: any;
+declare var generatePieChart: any;
 
 @Component({
   selector: 'app-report',
@@ -14,9 +17,13 @@ export class ReportComponent implements OnInit {
   constructor(reportService: ReportHandlerService) {
     this.itemList = reportService.getReportFromDatabase().snapshotChanges();
     console.log(this.itemList);
+    
   }
 
   ngOnInit(): void {
+    generatePointCloudChart();
+    generateScatterChart();
+    generatePieChart();
   }
 
 }
